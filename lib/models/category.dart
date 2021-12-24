@@ -3,8 +3,8 @@
 import 'package:flutter/material.dart';
 
 class Category {
-  final String id;
-  final String title;
+  final id;
+  final title;
   final Color color;
 
   const Category({
