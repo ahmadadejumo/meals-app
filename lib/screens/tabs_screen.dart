@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
+import '../widget/main_drawer.dart';
 import '../screens/favourites_screen.dart';
 import '../screens/categories_screen.dart';
 
@@ -37,6 +38,7 @@ class _TabsScreenState extends State<TabsScreen> {
           _pages[_selectedPageIndex]["title"],
         ),
       ),
+      drawer: MainDrawer(),
       body: _pages[_selectedPageIndex]["pages"],
       // ignore: prefer_const_literals_to_create_immutables
       bottomNavigationBar: BottomNavigationBar(
