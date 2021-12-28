@@ -1,6 +1,7 @@
 // ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, deprecated_member_use
 
 import 'package:flutter/material.dart';
+import './screens/filter_screen.dart';
 import './screens/tabs_screen.dart';
 import './screens/category_meals_screen.dart';
 import './screens/meal_deatail_screen.dart';
@@ -36,6 +37,7 @@ class MyApp extends StatelessWidget {
         "/": (ctx) => TabsScreen(),
         "/category-meals": (ctx) => CategoryMealsScreen(),
         "/meal-detail": (ctx) => MealDetailScreen(),
+        "/filters": (ctx) => FilterScreen(),
       },
     );
   }
