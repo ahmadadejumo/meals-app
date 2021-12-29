@@ -1,7 +1,4 @@
-// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, deprecated_member_use
-
-import 'dart:math';
-
+// ignore_for_file: prefer_const_constructors, use_key_in_widget_constructors, deprecated_member_use, prefer_final_fields
 import 'package:flutter/material.dart';
 import './dummy_data.dart';
 import './screens/filter_screen.dart';
@@ -73,6 +70,7 @@ class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Meals App',
       theme: ThemeData(
         primarySwatch: Colors.green,
